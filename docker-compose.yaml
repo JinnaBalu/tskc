@@ -1,0 +1,11 @@
+
+version: '3'
+services:
+  site:
+    container_name: tskc
+    command: jekyll serve
+    image: jekyll/jekyll:4.0.0
+    volumes:
+      - /home/balu/balu/work/balu/projects/governament/degree-collge:/srv/jekyll
+    ports:
+      - 4000:4000
